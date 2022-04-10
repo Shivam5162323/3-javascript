@@ -1,0 +1,679 @@
+<!----------------------- inline java script---------------- 
+
+<html>
+    <head>
+        <title>Javascript</title>
+    </head>
+
+    <body>
+        <button onclick="alert('hiiii')">Click Me!</button>
+    </body>
+</html>
+
+
+
+
+
+
+
+---internal javascript----------------
+<html>
+    <head>
+        <title>Javascript</title>
+    </head>
+
+    <body>
+        <button>Click Me!</button>
+
+
+        <script type="text/javascript">
+            alert('page is loaded');
+        </script>
+    </body>
+</html>
+
+
+
+
+-->
+
+
+
+
+
+
+
+<!-- 
+<html>
+    <head>
+        <title>Javascript</title>
+    </head>
+
+    <body>
+        <p id="text">Hello world!</p>
+
+        
+        <script type="text/javascript">
+            // updating text
+            document.getElementById("text").innerHTML = "Hello shiv!"
+        </script>
+    </body>
+</html>
+ -->
+
+
+
+
+
+
+
+<!-- 
+ <html>
+    <head>
+        <title>Javascript</title>
+    </head>
+
+    <body>
+        <p id="text">Hello world!</p>
+        <button id="mybutton">Change text</button>
+        
+        <script type="text/javascript">
+            // updating text using button
+            document.getElementById("mybutton").onclick = function(){
+
+                alert('Button Clicked')
+                document.getElementById("text").innerHTML="Hello Shiv!";
+
+
+            }
+        </script>
+    </body>
+</html> -->
+
+
+
+
+<!-- 
+
+<html>
+    <head>
+        <title>Javascript</title>
+    </head>
+
+    <body>
+        <p id="text">Hello world!</p>
+        <button id="mybutton">Change text</button>
+
+        <p id="secpara">i think Javascript is .....</p>
+        <button id="secbutton">Change para 2</button>
+
+        <p id="thirdpara"></p>
+        <button id="thirdbutton">make it appear</button>
+
+
+
+        <p id="fourthpara">let's style this</p>
+        <button id="fourthbutton">change style</button>
+        
+        <script type="text/javascript">
+
+
+
+            // updating text using button
+            document.getElementById("mybutton").onclick = function(){
+
+             
+                document.getElementById("text").innerHTML="Hello Shiv!";
+
+
+            }
+
+
+            //appending text
+            document.getElementById("secbutton").onclick = function(){
+
+                
+                document.getElementById("secpara").innerHTML= document.getElementById("secpara").innerHTML + "awesome";
+
+
+            }
+
+
+
+            // getting text out of nowhere
+            document.getElementById("thirdbutton").onclick = function(){
+
+                
+                document.getElementById("thirdpara").innerHTML=  "magic .....";
+
+
+            }
+
+
+
+            // changing text style using Js
+            document.getElementById("fourthbutton").onclick = function(){
+
+                
+                document.getElementById("fourthpara").style.color="gold";
+                document.getElementById("fourthpara").style.fontSize="50px";
+                document.getElementById("fourthpara").style.fontFamily="arial";
+
+
+            }
+        </script>
+    </body>
+</html> 
+
+
+
+
+
+
+
+
+
+<html>
+    <head>
+        <title>Javascript</title>
+    </head>
+
+    <body>
+     
+        
+           <script type="text/javascript"> 
+            var name = "shiv";
+            var x = 5;
+            x=20;
+            alert(name);
+            alert(x);
+
+
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ---------change text to entered text----------------- 
+
+<html>
+    <head>
+        <title>Javascript</title>
+    </head>
+
+    <body>
+     
+        
+        <input type="text" id="box">
+        
+
+        <button id="mybutton">Change text</button>
+
+
+        <p id="change">This is some text</p>
+
+
+        <script type="text/javascript">
+            
+            document.getElementById("mybutton").onclick=function(){
+
+                var textEntered = "";
+                textEntered = document.getElementById("box").value;
+                
+                document.getElementById("change").innerHTML=  textEntered ;
+            }
+
+
+        </script>
+    </body>
+</html>
+
+-->
+
+
+
+
+
+
+
+
+<!-- -------------------Arrays--------------------------------
+
+<html>
+    <head>
+        <title>Javascript</title>
+    </head>
+
+    <body>
+     
+
+
+        <script type="text/javascript">
+            
+           
+            var myArray = new Array();
+
+            myArray[0] = "pizza";
+            myArray[1] = "chocolate";
+
+
+            var tweets = ["Morning everyone","I love coffee!"] ;
+            tweets.push("Back to work!") ;  // adding this to last of array
+           
+            //tweets.splice(1,2); //1 for starting element and 2 is for ending element
+            //tweets.splice(1,0,"Cornflakes for breakfast");// adds cornflakes just before element 1 ..........0 represents how many items we want to delete
+            tweets.splice(1,1,"Cornflakes for breakfast");// adds cornflakes in place of element 1 ....
+            alert(tweets[1]);
+            console.log(tweets);
+            console.log(myArray); // display all element details in console
+            //console.log(myArray.length);  dislay only no of array element
+           
+
+
+
+
+        </script>
+    </body>
+</html> -->
+
+
+
+
+
+
+
+
+<!------------------------------- If statement-------------------------- -->
+<!-- 
+<html>
+    <head>
+        <title>Javascript</title>
+    </head>
+
+    <body>
+     
+
+
+        <script type="text/javascript">
+            
+           
+            var x=4;
+
+           if(x == 1){
+                alert('x is 1!!');
+           }
+           else{
+               alert("x is not 1");
+           }
+
+
+
+        </script>
+    </body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- ------------------------check magic word----------------------------- -->
+
+<!-- <html>
+    <head>
+        <title>Javascript</title>
+    </head>
+
+    <body>
+     
+        <input type="text" id="box" placeholder="Enter the magic word">
+        <button id="mybutton" >check</button>
+
+        <script type="text/javascript">
+            
+           
+           document.getElementById("mybutton").onclick=function(){
+              
+               var txt = " ";
+               txt = document.getElementById("box").value;
+               
+                   if(txt=="shiv"){
+                       alert('You are Welcome Boss!');
+                   }
+                   else{
+                       alert("You are not the Boss!! Get Lost");
+               }
+           }
+            
+
+
+
+        </script>
+    </body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- --------------How many fingers -----------------
+
+<html>
+    <head>
+        <title>Javascript</title>
+    </head>
+
+    <body>
+        <p>How many fingers am i holding up?</p>
+        <p><input type="text" id="box" placeholder="Guess the no of fingers"></p>
+        <button id="mybutton" >check</button>
+
+        <script type="text/javascript">
+            
+           
+           document.getElementById("mybutton").onclick=function(){
+              
+               var txt = " ";
+               txt = document.getElementById("box").value;
+               //Random no from 0 to 5
+               var ran= Math.floor(Math.random() * 6);
+                   if(txt==ran){
+                       alert('You are correct!');
+                   }
+                   else{
+                       alert("You are wrong! the correct ans was " + ran);
+                       
+               }
+           }
+            
+
+
+
+        </script>
+    </body>
+</html> 
+
+
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- --------------------------For loop----------------------- -->
+
+ <!-- <html>
+    <head>
+        <title>Javascript</title>
+    </head>
+
+    <body>
+     
+        
+        <script type="text/javascript">
+
+            var tweets = ["hii everyone", "we have linked", "for loop with arrays"];
+            for(var i = 0; i<tweets.length ; i++){
+              alert(tweets[i]);  
+            }
+
+        </script>
+
+    </body>
+</html> -->
+
+
+
+
+
+
+<!-- -----------printing on page using for loop---------------- 
+
+<html>
+    <head>
+        <title>Javascript</title>
+    </head>
+
+    <body>
+     
+        <div id="tweetdiv"></div>
+        <script type="text/javascript">
+
+            var tweets = ["hii everyone", "we have linked", "for loop with arrays"];
+            
+            var tweetstring="";
+          
+                for(var i = 0; i<tweets.length ; i++){
+                    tweetstring = tweetstring + "<p>" +tweets[i] + "<p>";  
+                  }
+
+                  //\first time it will print undefined as tweetstring is not equal to anything so remember to do it equal to something like a empty string
+            document.getElementById("tweetdiv").innerHTML=tweetstring;
+
+          
+
+        </script>
+
+    </body>
+</html>
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ------------------While loop----------------- -
+
+
+<html>
+    <head>
+        <title>Javascript</title>
+    </head>
+
+    <body>
+     
+        <div id="tweetdiv"></div>
+        <script type="text/javascript">
+
+            var tweets = ["hii everyone", "we have linked", "for loop with arrays"];
+           
+            var tweetstring="";
+            var i=0;
+               while(i<tweets.length){
+                    tweetstring = tweetstring + "<p>" +tweets[i] + "<p>";  
+                        i++;
+                  }
+
+                  //\first time it will print undefined as tweetstring is not equal to anything so remember to do it equal to something like a empty string
+            document.getElementById("tweetdiv").innerHTML=tweetstring;
+
+          
+
+        </script>
+
+    </body>
+</html>
+
+-->
+
+
+
+
+
+
+<!-------------- pc guesses the fingres ---------------
+<html>
+    <head>
+        <title>Javascript</title>
+    </head>
+
+    <body>
+       
+        <p>how many fingres are u holding up?</p>
+         <p><input type="text" id="mynumber" ></p> 
+        
+        <label for="mynumber">Choose no of fingres:</label>
+        <select name="number" id="mynumber">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+          <button id="guess" >Guess</button>
+        <script type="text/javascript">
+         
+            
+           document.getElementById("guess").onclick=function(){
+              
+               
+               var mynumber =  document.getElementById("mynumber").value;
+               var gotit = false;
+                var noofguesses=1;
+                
+               while(gotit==false){
+                    var guess= Math.floor(Math.random() * 6);
+                    
+                    if(guess== mynumber){
+                        //computer is correct
+                        gotit=true;
+                        alert("got it");
+                        alert(noofguesses + " are total no of guesses");
+                    }
+                    else{
+                        // computer is wrong
+                        alert('oops!!')
+                        noofguesses++;
+                    }
+               
+               }  
+      
+            }
+
+
+        </script>
+    </body>
+</html> 
+--->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!----------------------Function--------------------------------------
+<html>
+    <head>
+        <title>Javascript</title>
+    </head>
+
+    <body>
+       
+        
+        <script type="text/javascript">
+         
+            function alertme(){
+                alert("Hii!");
+            }
+
+            alertme();
+      
+        
+
+
+        </script>
+    </body>
+</html> --->
+
+
+
+
+
+
+
+
+
+<!-- 
+
+<html>
+    <head>
+        <title>Javascript</title>
+    </head>
+
+    <body>
+       
+        
+        <script type="text/javascript">
+         
+            function avg(a,b){
+                return (a+b)/2;
+            }
+            var x=5;
+            var y=10;
+            alert(avg(x,y));
+      
+        
+
+
+        </script>
+    </body>
+</html>
+
+
+ -->
+
+
+
